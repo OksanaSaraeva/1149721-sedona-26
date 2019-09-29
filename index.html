@@ -8,24 +8,24 @@
 <header>
   <nav>
     <ul>
-      <li><a href="">Информация</a></li>
-      <li><a href="">Фото и видео</a></li>
-      <li><a href="">Логотип</a></li>
-      <li><a href="">Карта штата</a></li>
+      <li><a href="info.html">Информация</a></li>
+      <li><a href="galery.html">Фото и видео</a></li>
+      <li><a href="index.html">Логотип</a></li>
+      <li><a href="map.html">Карта штата</a></li>
       <li><a href="catalog.html">Гостиницы</a></li>
     </ul>
   </nav>
   <span><img src="img/logo.png" width="" height="" alt="Логотип сайта Седона"></span>
   <span><img src="img/backgroundphoto.jpg" width="" height="" alt="Фон в шапке"></span>
-  <span><img src="img/intro-welcome.svg" alt="Надпись на фоне" height="" width=""></span>
+  <span><img src="img/intro-welcome.svg"  height="" width="" alt="Надпись на фоне"></span>
 </header>
 <main>
   <div>
-    <h1>Сайт Sedona</h1>
+    <h1 class="visually-hidden">Сайт Sedona</h1>
   </div>
 
   <section>
-    <h2>Причины</h2>
+    <h2 class="visually-hidden">Причины выбрать Седону</h2>
     <div>
       <p>Седона- небольшой городок в Аризоне, заслуживающий большего!</p>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
@@ -53,7 +53,7 @@
 
         <p>Не только китайского, но и местного производства!</p>
       </li>
-      <li><img src="img/Сanyon.jpg" width="" height="" alt="Фото каньона"/></li>
+      <li><img src="img/canyon.jpg" width="" height="" alt="Фото каньона"/></li>
       <li><h3>Там есть
         Мост дьявола</h3>
 
@@ -93,25 +93,27 @@
     <p>Укажите предполагаемые даты поездки,
       и мы покажем вам лучшие предложения гостиниц в седоне</p>
   </section>
-  <section>
-    <h2>Поиск гостиницы В Седоне</h2>
-    <ul>
-      <li>Дата заезда:<time datetime="2017-04-24">24 апреля 2017</time></li>
-      <li>Дата выезда:<time datetime="2017-07-04">4 июля 2017</time></li>
-      <li>Взрослые:</li>
-      <li>Дети:</li>
-      <li><button type="button"> Найти</button></li>
-    </ul>
-  </section>
 
+    <div>
+      <div>
+        <h2>Поиск гостиницы В Седоне</h2>
+      </div>
+        <form action="" method="post">
+          <label for="dateOfArrive">Дата заезда:</label><input id="dateOfArrive" type="date">
+          <label for="dateOfLefting">Дата выезда:</label><input id="dateOfLefting" type="date">
+          <label for="adult">Взрослые:</label><input id="adult" type="number">
+          <label for="kids">Дети:</label><input id="kids" type="number">
+          <button type="button"> Найти</button>
+        </form>
+       </div>
 
 </main>
 <footer>
   <p>#Visitsedona</p>
   <div>
     <ul>
-      <li><a href=""><img src="img/twitter.svg" alt="Твитер"></a></li>
-      <li><a href=""><img src="img/fb-icon.svg" alt="Фуйсбук"></a></li>
+      <li><a href=""><img src="img/twitter.svg" alt="Твиттер"></a></li>
+      <li><a href=""><img src="img/fb-icon.svg" alt="Фейсбук"></a></li>
       <li><a href=""><img src="img/youtube.svg" alt="Ютуб"></a></li>
     </ul>
   </div>
