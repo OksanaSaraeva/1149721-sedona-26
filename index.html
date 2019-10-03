@@ -10,14 +10,14 @@
     <ul>
       <li><a href="info.html">Информация</a></li>
       <li><a href="galery.html">Фото и видео</a></li>
-      <li><a href="index.html">Логотип</a></li>
       <li><a href="map.html">Карта штата</a></li>
       <li><a href="catalog.html">Гостиницы</a></li>
     </ul>
   </nav>
-  <span><img src="img/logo.png" width="" height="" alt="Логотип сайта Седона"></span>
-  <span><img src="img/backgroundphoto.jpg" width="" height="" alt="Фон в шапке"></span>
-  <span><img src="img/intro-welcome.svg"  height="" width="" alt="Надпись на фоне"></span>
+  <a href="">
+    <img src="img/logo.png" width="140" height="71" alt="Логотип сайта Седона">
+  </a>
+  <div><img src="img/intro-welcome.svg"  width="914" height="307" alt="Добро пожаловать в Седону"></div>
 </header>
 <main>
   <div>
@@ -36,8 +36,11 @@
         <p>— №1 —</p>
 
         <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+
+      <div>
+        <img src="img/house-flag.jpg" width="800" height="256" alt="Фото дома с флагом">
+      </div>
       </li>
-      <li><img src="img/house-flag.jpg" width="" height="" alt="Фото дома с флагом"></li>
       <li>
         <h3>Жильё</h3>
 
@@ -53,15 +56,21 @@
 
         <p>Не только китайского, но и местного производства!</p>
       </li>
-      <li><img src="img/canyon.jpg" width="" height="" alt="Фото каньона"/></li>
-      <li><h3>Там есть
+      <li>
+        <div>
+        <img src="img/canyon.jpg" width="800" height="256" alt="Фото каньона"/>
+        </div>
+      </li>
+      <li>
+        <h3>Там есть
         Мост дьявола</h3>
 
         <p> — №2 —</p>
 
         <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
       </li>
-      <li><h3>Небольшая
+      <li>
+        <h3>Небольшая
         площадь</h3>
 
         <p>— №3 —</p>
@@ -69,15 +78,16 @@
         <p>Все достопримечательности
           находятся очень близко</p>
       </li>
-      <li><h3>Красивая
+      <li>
+        <h3>Красивая
         дорога</h3>
-
         <p> — №4 —</p>
 
         <p>Ехать в Седону из Лас-Вегаса совсем
           не скучно!</p>
       </li>
-      <li><h3>Мало
+      <li>
+        <h3>Мало
         туристов</h3>
 
         <p>— №5 —</p>
@@ -98,11 +108,41 @@
       <div>
         <h2>Поиск гостиницы В Седоне</h2>
       </div>
-        <form action="" method="post">
-          <label for="dateOfArrive">Дата заезда:</label><input id="dateOfArrive" type="date">
-          <label for="dateOfLefting">Дата выезда:</label><input id="dateOfLefting" type="date">
-          <label for="adult">Взрослые:</label><input id="adult" type="number">
-          <label for="kids">Дети:</label><input id="kids" type="number">
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <p>
+            <label for="dateOfArrive">Дата заезда:</label>
+            <input id="dateOfArrive" type="text" name="dateOfArrive" value="" placeholder="24.04.2017">
+          </p>
+          <p>
+            <label for="dateOfLefting">Дата выезда:</label>
+            <input id="dateOfLefting" type="text" name="dateOfLefting" value="" placeholder="04.07.2017">
+          </p>
+          <p>
+            <label for="adult">Взрослые:</label>
+            <input id="adult" type="number" name="adult" value="" placeholder="2">
+          </p>
+          <p>
+            <label for="kids">Дети:</label>
+            <input id="kids" type="number" name="kids" value="" placeholder="0">
+          </p>
+          <button>
+            <span aria-label="Уменьшить количество взрослых">
+            </span>
+          </button>
+          <input type="number" id="quantityAdult" name="quantityAdult" value="" placeholder="2" min="0" max="10" aria-label="Введите количество взрослых">
+          <button>
+            <span aria-label="Увеличить количество взрослых">
+            </span>
+          </button>
+            <button>
+            <span aria-label="Уменьшить количество детей">
+            </span>
+            </button>
+          <input type="number" id="quantitykids" name="quantitykids" value="" placeholder="0" min="0" max="10" aria-label="Введите количество детей">
+          <button>
+            <span aria-label="Увеличить количество детей">
+            </span>
+          </button>
           <button type="button"> Найти</button>
         </form>
        </div>
@@ -119,7 +159,7 @@
   </div>
   <div>
     <h2>Website by</h2>
-    <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" alt="logo-htmlacademy"></a>
+    <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="695" height="152" alt="Логотип htmlacademy"></a>
   </div>
   <section><!--Карта--></section>
 </footer>
